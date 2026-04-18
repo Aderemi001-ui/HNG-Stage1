@@ -7,7 +7,7 @@ const ejs=require('ejs')
 app.set('view engine','ejs')
 app.use(bodyParser.urlencoded({extended:true}))
 require('dotenv').config()
-mongoose.connect(process.env.MONGODB_URI)
+mongoose.connect('mongodb+srv://glamaurora001_db_user:A5gx4W3dYLFV08kb@cluster0.pz15n1r.mongodb.net/?appName=Cluster0')
 .then(()=>{
 console.log('Mongoose Server Is Already Running!');
 })
