@@ -37,6 +37,11 @@ const jsonify=''
 app.get('/',(req,res)=>{
   res.render('index')
 })
+
+app.get('/',(req,res)=>{
+  res.render('index')
+})
+
 app.post('/api/profiles',async(req,res)=>{
  try{
    const name=req.query.name
@@ -168,7 +173,7 @@ if(deleted){
         status:'success',
     })
 }else{
-console.log('Error Deleting User: ',err);
+console.log('Error Deleting User');
 }
 
     
